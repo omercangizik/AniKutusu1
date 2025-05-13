@@ -1,0 +1,252 @@
+[debug] [2025-05-13T14:27:09.253Z] ----------------------------------------------------------------------
+[debug] [2025-05-13T14:27:09.257Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ömer can gizik\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2025-05-13T14:27:09.257Z] CLI Version:   14.3.1
+[debug] [2025-05-13T14:27:09.257Z] Platform:      win32
+[debug] [2025-05-13T14:27:09.257Z] Node Version:  v22.15.0
+[debug] [2025-05-13T14:27:09.257Z] Time:          Tue May 13 2025 17:27:09 GMT+0300 (GMT+03:00)
+[debug] [2025-05-13T14:27:09.258Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-13T14:27:09.504Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-13T14:27:09.505Z] > authorizing via signed-in user (gizikomer441@gmail.com)
+[debug] [2025-05-13T14:27:09.505Z] [iam] checking project anikutusu-7896d for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2025-05-13T14:27:09.506Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:09.506Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:09.507Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d:testIamPermissions [none]
+[debug] [2025-05-13T14:27:09.507Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d:testIamPermissions x-goog-quota-user=projects/anikutusu-7896d
+[debug] [2025-05-13T14:27:09.507Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-05-13T14:27:10.671Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d:testIamPermissions 200
+[debug] [2025-05-13T14:27:10.671Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2025-05-13T14:27:10.671Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:10.671Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:10.672Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/anikutusu-7896d/serviceAccounts/anikutusu-7896d@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2025-05-13T14:27:10.672Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/anikutusu-7896d/serviceAccounts/anikutusu-7896d@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2025-05-13T14:27:11.729Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/anikutusu-7896d/serviceAccounts/anikutusu-7896d@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2025-05-13T14:27:11.730Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/anikutusu-7896d/serviceAccounts/anikutusu-7896d@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'anikutusu-7896d'...
+[info] 
+[info] i  deploying functions 
+[debug] [2025-05-13T14:27:11.735Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:11.736Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:11.736Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-05-13T14:27:11.736Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/anikutusu-7896d
+[debug] [2025-05-13T14:27:12.950Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-05-13T14:27:12.950Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-05-13T14:27:12.951Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:12.951Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:12.951Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d [none]
+[debug] [2025-05-13T14:27:13.257Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d 200
+[debug] [2025-05-13T14:27:13.258Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d {"projectNumber":"90032159684","projectId":"anikutusu-7896d","lifecycleState":"ACTIVE","name":"AniKutusu","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-05-13T13:12:46.479758Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[debug] [2025-05-13T14:27:13.262Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:13.262Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:13.263Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:13.263Z] Checked if tokens are valid: true, expires at: 1747149788810
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2025-05-13T14:27:13.263Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:13.263Z] Checked if tokens are valid: true, expires at: 1747149788810
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2025-05-13T14:27:13.264Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:13.264Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:13.265Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-05-13T14:27:13.265Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/anikutusu-7896d
+[debug] [2025-05-13T14:27:13.267Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-05-13T14:27:13.267Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/anikutusu-7896d
+[debug] [2025-05-13T14:27:13.270Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudbuild.googleapis.com [none]
+[debug] [2025-05-13T14:27:13.270Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudbuild.googleapis.com x-goog-quota-user=projects/anikutusu-7896d
+[debug] [2025-05-13T14:27:13.273Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/artifactregistry.googleapis.com [none]
+[debug] [2025-05-13T14:27:13.273Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/artifactregistry.googleapis.com x-goog-quota-user=projects/anikutusu-7896d
+[debug] [2025-05-13T14:27:14.336Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudfunctions.googleapis.com 200
+[debug] [2025-05-13T14:27:14.337Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudfunctions.googleapis.com [omitted]
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2025-05-13T14:27:14.462Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudbuild.googleapis.com 200
+[debug] [2025-05-13T14:27:14.462Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudbuild.googleapis.com [omitted]
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2025-05-13T14:27:14.474Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/artifactregistry.googleapis.com 200
+[debug] [2025-05-13T14:27:14.474Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/artifactregistry.googleapis.com [omitted]
+[info] +  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2025-05-13T14:27:14.476Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/runtimeconfig.googleapis.com 200
+[debug] [2025-05-13T14:27:14.476Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-05-13T14:27:14.477Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:14.477Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:14.477Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/anikutusu-7896d/adminSdkConfig [none]
+[debug] [2025-05-13T14:27:15.083Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/anikutusu-7896d/adminSdkConfig 200
+[debug] [2025-05-13T14:27:15.083Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/anikutusu-7896d/adminSdkConfig {"projectId":"anikutusu-7896d","storageBucket":"anikutusu-7896d.firebasestorage.app"}
+[debug] [2025-05-13T14:27:15.084Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:15.084Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:15.084Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/anikutusu-7896d/configs [none]
+[debug] [2025-05-13T14:27:15.624Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/anikutusu-7896d/configs 200
+[debug] [2025-05-13T14:27:15.624Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/anikutusu-7896d/configs {}
+[debug] [2025-05-13T14:27:15.628Z] Validating nodejs source
+[warn] !  functions: Runtime Node.js 18 was deprecated on 2025-04-30 and will be decommissioned on 2025-10-31, after which you will not be able to deploy without upgrading. Consider upgrading now to avoid disruption. See https://cloud.google.com/functions/docs/runtime-support for full details on the lifecycle policy 
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2025-05-13T14:27:17.285Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.5.1",
+    "express-validator": "^7.0.1",
+    "firebase-admin": "^11.11.0",
+    "firebase-functions": "^4.5.0"
+  },
+  "private": true
+}
+[debug] [2025-05-13T14:27:17.286Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase default to determine what to deploy 
+[info] i  functions: You are using a version of firebase-functions SDK (4.9.0) that does not have support for the newest Firebase Extensions features. Please update firebase-functions SDK to >=5.1.0 to use them correctly 
+[debug] [2025-05-13T14:27:17.291Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-05-13T14:27:17.330Z] Found firebase-functions binary at 'C:\Users\ömer can gizik\Desktop\AniKutusu\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8993
+
+[debug] [2025-05-13T14:27:18.721Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] i  functions: preparing functions directory for uploading... 
+[info] i  functions: packaged C:\Users\ömer can gizik\Desktop\AniKutusu\functions (40.63 KB) for uploading 
+[debug] [2025-05-13T14:27:22.832Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:22.832Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:22.832Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/-/functions [none]
+[debug] [2025-05-13T14:27:23.735Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/-/functions 200
+[debug] [2025-05-13T14:27:23.735Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/-/functions {}
+[debug] [2025-05-13T14:27:23.736Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:23.736Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:23.736Z] >>> [apiv2][query] GET https://cloudfunctions.googleapis.com/v2/projects/anikutusu-7896d/locations/-/functions filter=environment%3D%22GEN_2%22
+[debug] [2025-05-13T14:27:24.824Z] <<< [apiv2][status] GET https://cloudfunctions.googleapis.com/v2/projects/anikutusu-7896d/locations/-/functions 200
+[debug] [2025-05-13T14:27:24.824Z] <<< [apiv2][body] GET https://cloudfunctions.googleapis.com/v2/projects/anikutusu-7896d/locations/-/functions {}
+[debug] [2025-05-13T14:27:24.833Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:24.833Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:24.833Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-05-13T14:27:24.833Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/anikutusu-7896d
+[debug] [2025-05-13T14:27:26.093Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-05-13T14:27:26.094Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/anikutusu-7896d/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-05-13T14:27:26.094Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:26.095Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:26.095Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d [none]
+[debug] [2025-05-13T14:27:27.205Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d 200
+[debug] [2025-05-13T14:27:27.205Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d {"projectNumber":"90032159684","projectId":"anikutusu-7896d","lifecycleState":"ACTIVE","name":"AniKutusu","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-05-13T13:12:46.479758Z"}
+[debug] [2025-05-13T14:27:27.206Z] [functions] found 1 new HTTP functions, testing setIamPolicy permission...
+[debug] [2025-05-13T14:27:27.206Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:27.206Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:27.206Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d:testIamPermissions [none]
+[debug] [2025-05-13T14:27:27.206Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d:testIamPermissions x-goog-quota-user=projects/anikutusu-7896d
+[debug] [2025-05-13T14:27:27.206Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-05-13T14:27:27.444Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d:testIamPermissions 200
+[debug] [2025-05-13T14:27:27.444Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikutusu-7896d:testIamPermissions {"permissions":["cloudfunctions.functions.setIamPolicy"]}
+[debug] [2025-05-13T14:27:27.445Z] [functions] found setIamPolicy permission, proceeding with deploy
+[debug] [2025-05-13T14:27:27.445Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:27.445Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:27.446Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/functions:generateUploadUrl [none]
+[debug] [2025-05-13T14:27:27.446Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/functions:generateUploadUrl {}
+[debug] [2025-05-13T14:27:37.305Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/functions:generateUploadUrl 200
+[debug] [2025-05-13T14:27:37.306Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/functions:generateUploadUrl {"uploadUrl":"https://storage.googleapis.com/uploads-890998952710.us-central1.cloudfunctions.appspot.com/ba8f8106-7716-4864-8dc3-e1de54cd67b0.zip?GoogleAccessId=service-90032159684@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747148256&Signature=K9CMpd9%2BZlpKV4yFmpTPcVgGarUNODiMcuawM%2B0SlD1JfEALJCuYTZeywHFheH0CyMtvCDKKNGhBbvntHjco%2Bn4mz9Evw6U2Py%2BC3j7J3Pyr0Cy%2Fw%2BlqhBwbfsWXHB9oZYJlux5I5y0BOIpsSH6DehLuC3zxocxUrd1mHBjrTReeWoFRe9%2Fb42w%2F3FzsB%2BOQ6O9D1B70z7bFtTej35trIO%2BVF50gm%2BFTfQeD5k7%2BYJoWq4suYWKXGQhzLhV9sGTbL8rMJEcMBxwTnBJJ%2B8ZPzFsK5Pjs1jBPW%2B8vHfVZql6the%2F6akgrAcLOtMp%2BOCNWGBHWc0shyYyThr1OKVp6IQ%3D%3D"}
+[debug] [2025-05-13T14:27:37.308Z] >>> [apiv2][query] PUT https://storage.googleapis.com/uploads-890998952710.us-central1.cloudfunctions.appspot.com/ba8f8106-7716-4864-8dc3-e1de54cd67b0.zip GoogleAccessId=service-90032159684%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1747148256&Signature=K9CMpd9%2BZlpKV4yFmpTPcVgGarUNODiMcuawM%2B0SlD1JfEALJCuYTZeywHFheH0CyMtvCDKKNGhBbvntHjco%2Bn4mz9Evw6U2Py%2BC3j7J3Pyr0Cy%2Fw%2BlqhBwbfsWXHB9oZYJlux5I5y0BOIpsSH6DehLuC3zxocxUrd1mHBjrTReeWoFRe9%2Fb42w%2F3FzsB%2BOQ6O9D1B70z7bFtTej35trIO%2BVF50gm%2BFTfQeD5k7%2BYJoWq4suYWKXGQhzLhV9sGTbL8rMJEcMBxwTnBJJ%2B8ZPzFsK5Pjs1jBPW%2B8vHfVZql6the%2F6akgrAcLOtMp%2BOCNWGBHWc0shyYyThr1OKVp6IQ%3D%3D
+[debug] [2025-05-13T14:27:37.308Z] >>> [apiv2][body] PUT https://storage.googleapis.com/uploads-890998952710.us-central1.cloudfunctions.appspot.com/ba8f8106-7716-4864-8dc3-e1de54cd67b0.zip [stream]
+[debug] [2025-05-13T14:27:38.213Z] <<< [apiv2][status] PUT https://storage.googleapis.com/uploads-890998952710.us-central1.cloudfunctions.appspot.com/ba8f8106-7716-4864-8dc3-e1de54cd67b0.zip 200
+[debug] [2025-05-13T14:27:38.213Z] <<< [apiv2][body] PUT https://storage.googleapis.com/uploads-890998952710.us-central1.cloudfunctions.appspot.com/ba8f8106-7716-4864-8dc3-e1de54cd67b0.zip [omitted]
+[info] +  functions: functions folder uploaded successfully 
+[info] i  functions: creating Node.js 18 (1st Gen) function api(us-central1)... 
+[debug] [2025-05-13T14:27:38.221Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:38.221Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:38.221Z] >>> [apiv2][query] POST https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/functions [none]
+[debug] [2025-05-13T14:27:38.221Z] >>> [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/functions {"name":"projects/anikutusu-7896d/locations/us-central1/functions/api","sourceUploadUrl":"https://storage.googleapis.com/uploads-890998952710.us-central1.cloudfunctions.appspot.com/ba8f8106-7716-4864-8dc3-e1de54cd67b0.zip?GoogleAccessId=service-90032159684@gcf-admin-robot.iam.gserviceaccount.com&Expires=1747148256&Signature=K9CMpd9%2BZlpKV4yFmpTPcVgGarUNODiMcuawM%2B0SlD1JfEALJCuYTZeywHFheH0CyMtvCDKKNGhBbvntHjco%2Bn4mz9Evw6U2Py%2BC3j7J3Pyr0Cy%2Fw%2BlqhBwbfsWXHB9oZYJlux5I5y0BOIpsSH6DehLuC3zxocxUrd1mHBjrTReeWoFRe9%2Fb42w%2F3FzsB%2BOQ6O9D1B70z7bFtTej35trIO%2BVF50gm%2BFTfQeD5k7%2BYJoWq4suYWKXGQhzLhV9sGTbL8rMJEcMBxwTnBJJ%2B8ZPzFsK5Pjs1jBPW%2B8vHfVZql6the%2F6akgrAcLOtMp%2BOCNWGBHWc0shyYyThr1OKVp6IQ%3D%3D","entryPoint":"api","runtime":"nodejs18","dockerRegistry":"ARTIFACT_REGISTRY","labels":{"deployment-tool":"cli-firebase","firebase-functions-hash":"41d4eb43c2c601317dde60d7428a33dd287c72e2"},"httpsTrigger":{"securityLevel":"SECURE_ALWAYS"},"minInstances":null,"maxInstances":null,"ingressSettings":null,"environmentVariables":{"FIREBASE_CONFIG":"{\"projectId\":\"anikutusu-7896d\",\"storageBucket\":\"anikutusu-7896d.firebasestorage.app\"}","GCLOUD_PROJECT":"anikutusu-7896d","EVENTARC_CLOUD_EVENT_SOURCE":"projects/anikutusu-7896d/locations/us-central1/functions/api"},"serviceAccountEmail":null,"availableMemoryMb":null,"timeout":null,"vpcConnector":null,"vpcConnectorEgressSettings":null,"buildEnvironmentVariables":{"GOOGLE_NODE_RUN_SCRIPTS":""}}
+[debug] [2025-05-13T14:27:40.539Z] <<< [apiv2][status] POST https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/functions 400
+[debug] [2025-05-13T14:27:40.539Z] <<< [apiv2][body] POST https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/functions {"error":{"code":400,"message":"Failed to create 1st Gen function projects/anikutusu-7896d/locations/us-central1/functions/api: Default service account '90032159684-compute@developer.gserviceaccount.com' doesn't exist. Please recreate this account or specify a different account. Please visit https://cloud.google.com/functions/docs/troubleshooting for in-depth troubleshooting documentation.","status":"FAILED_PRECONDITION"}}
+[warn] !  functions: failed to create function projects/anikutusu-7896d/locations/us-central1/functions/api 
+[error] Failed to create function projects/anikutusu-7896d/locations/us-central1/functions/api
+[debug] [2025-05-13T14:27:40.555Z] Total Function Deployment time: 2325
+[debug] [2025-05-13T14:27:40.556Z] 1 Functions Deployed
+[debug] [2025-05-13T14:27:40.556Z] 1 Functions Errored
+[debug] [2025-05-13T14:27:40.560Z] 0 Function Deployments Aborted
+[debug] [2025-05-13T14:27:40.560Z] Average Function Deployment time: 2324
+[info] 
+[info] Functions deploy had errors with the following functions:
+	api(us-central1)
+[debug] [2025-05-13T14:27:40.895Z] Not printing URL for HTTPS function. Typically this means it didn't match a filter or we failed deployment
+[debug] [2025-05-13T14:27:40.896Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:40.896Z] Checked if tokens are valid: true, expires at: 1747149788810
+[debug] [2025-05-13T14:27:40.897Z] >>> [apiv2][query] GET https://artifactregistry.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/repositories/gcf-artifacts [none]
+[debug] [2025-05-13T14:27:41.948Z] <<< [apiv2][status] GET https://artifactregistry.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/repositories/gcf-artifacts 404
+[debug] [2025-05-13T14:27:41.948Z] <<< [apiv2][body] GET https://artifactregistry.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/repositories/gcf-artifacts {"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}}
+[debug] [2025-05-13T14:27:41.948Z] Failed to check artifact cleanup policy for region us-central1: Request to https://artifactregistry.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/repositories/gcf-artifacts had HTTP Error: 404, Requested entity was not found. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"Requested entity was not found.","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://artifactregistry.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/repositories/gcf-artifacts had HTTP Error: 404, Requested entity was not found.","status":404}
+[debug] [2025-05-13T14:27:41.949Z] Functions deploy failed.
+[debug] [2025-05-13T14:27:41.949Z] {
+  "endpoint": {
+    "id": "api",
+    "project": "anikutusu-7896d",
+    "region": "us-central1",
+    "entryPoint": "api",
+    "platform": "gcfv1",
+    "runtime": "nodejs18",
+    "httpsTrigger": {},
+    "serviceAccount": null,
+    "ingressSettings": null,
+    "availableMemoryMb": null,
+    "timeoutSeconds": null,
+    "maxInstances": null,
+    "minInstances": null,
+    "vpc": null,
+    "environmentVariables": {
+      "FIREBASE_CONFIG": "{\"projectId\":\"anikutusu-7896d\",\"storageBucket\":\"anikutusu-7896d.firebasestorage.app\"}",
+      "GCLOUD_PROJECT": "anikutusu-7896d",
+      "EVENTARC_CLOUD_EVENT_SOURCE": "projects/anikutusu-7896d/locations/us-central1/functions/api"
+    },
+    "codebase": "default",
+    "targetedByOnly": false,
+    "hash": "41d4eb43c2c601317dde60d7428a33dd287c72e2",
+    "labels": {
+      "deployment-tool": "cli-firebase"
+    }
+  },
+  "op": "create",
+  "original": {
+    "name": "FirebaseError",
+    "children": [],
+    "context": {
+      "function": "projects/anikutusu-7896d/locations/us-central1/functions/api"
+    },
+    "exit": 1,
+    "message": "Failed to create function projects/anikutusu-7896d/locations/us-central1/functions/api",
+    "original": {
+      "name": "FirebaseError",
+      "children": [],
+      "context": {
+        "body": {
+          "error": {
+            "code": 400,
+            "message": "Failed to create 1st Gen function projects/anikutusu-7896d/locations/us-central1/functions/api: Default service account '90032159684-compute@developer.gserviceaccount.com' doesn't exist. Please recreate this account or specify a different account. Please visit https://cloud.google.com/functions/docs/troubleshooting for in-depth troubleshooting documentation.",
+            "status": "FAILED_PRECONDITION"
+          }
+        },
+        "response": {
+          "statusCode": 400
+        }
+      },
+      "exit": 1,
+      "message": "Request to https://cloudfunctions.googleapis.com/v1/projects/anikutusu-7896d/locations/us-central1/functions had HTTP Error: 400, Failed to create 1st Gen function projects/anikutusu-7896d/locations/us-central1/functions/api: Default service account '90032159684-compute@developer.gserviceaccount.com' doesn't exist. Please recreate this account or specify a different account. Please visit https://cloud.google.com/functions/docs/troubleshooting for in-depth troubleshooting documentation.",
+      "status": 400
+    },
+    "status": 400,
+    "code": 400
+  }
+}
+[debug] [2025-05-13T14:27:42.087Z] Error: Failed to create function api in region us-central1
+    at C:\Users\ömer can gizik\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:52:11
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Fabricator.createV1Function (C:\Users\ömer can gizik\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:182:32)
+    at async Fabricator.createEndpoint (C:\Users\ömer can gizik\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:134:13)
+    at async handle (C:\Users\ömer can gizik\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\release\fabricator.js:89:17)
+[error] 
+[error] Error: There was an error deploying functions
